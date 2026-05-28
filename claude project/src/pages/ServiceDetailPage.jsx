@@ -4,7 +4,6 @@ import Footer from '../components/Footer';
 import { getServiceBySlug } from '../data/services';
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
-import ReelMorphedStage from '../components/ReelMorphedStage';
 
 export default function ServiceDetailPage() {
   const { slug } = useParams();
@@ -19,7 +18,7 @@ export default function ServiceDetailPage() {
       <Navbar />
 
       <section className="pt-32 pb-20 relative overflow-hidden">
-        <ReelMorphedStage intensity={0.95} />
+        
         {/* Background Effects */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#D4AF37]/5 via-[#050505] to-[#050505]" />
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#B8860B]/5 rounded-full blur-[120px] pointer-events-none" />
