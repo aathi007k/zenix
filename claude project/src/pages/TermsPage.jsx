@@ -2,7 +2,6 @@ import { useGlobal } from '../context/GlobalContext';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { motion } from 'framer-motion';
-import ReelMorphedStage from '../components/ReelMorphedStage';
 
 export default function TermsPage() {
   const { terms } = useGlobal();
@@ -39,7 +38,7 @@ export default function TermsPage() {
       {/* Hero */}
       <section className="relative pt-40 pb-16 overflow-hidden">
         <div className="absolute top-0 right-1/4 w-[500px] h-[500px] bg-[#D4AF37]/5 rounded-full blur-[120px] pointer-events-none" />
-        <ReelMorphedStage intensity={0.9} />
+        
         <div className="site-container relative z-10 text-center">
           <motion.span 
             initial={{ opacity: 0, y: -20 }}
